@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice Routing</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>    
+  <?php require 'templates/partials/_header.phtml'; ?>
+  <?php if ($template === 'about') { ?>
+    <?php require 'templates/partials/_about.phtml'; ?>
+  <?php } elseif ($template === 'contact') { ?>
+    <?php require 'templates/partials/_contact.phtml'; ?>
+  <?php } else { ?>
+    <?php require 'templates/partials/_homepage.phtml'; ?>
+  <?php } ?> 
+  <?php require 'templates/partials/_footer.phtml'; ?>
+</body>
+</html>
+
